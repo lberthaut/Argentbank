@@ -1,11 +1,9 @@
 import React from 'react';
 import Banktree from '../../assets/bank-tree.jpeg';
-import Fetchtest from '../../services/user';
 
 
 export default class Hero extends React.Component{
     render(){
-        Fetchtest();
         return(
             <div className="hero">
                 <section className="hero-content">
