@@ -10,7 +10,7 @@ export const useUserProfile = (token: string) =>{
 
     useEffect(()=>{
         setIsLoading(true);
-        fetch('http://localhost:3001' + 'api/v1/user/profile', {
+        fetch('http://localhost:3001/api/v1/user/profile', {
             method: "POST",
             headers:{ Authoriztion: "Bearer" + token, accept: "application/json"}
         })

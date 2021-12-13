@@ -16,7 +16,8 @@ export interface userProfile{
     lastName: string,
     createdAt: string,
     updatedAt: string,
-    id: string
+    id: string,
+    token: string
 }
 
 export const emptyProfile: userProfile={
@@ -25,5 +26,6 @@ export const emptyProfile: userProfile={
     lastName: "",
     createdAt: "",
     updatedAt: "",
-    id: ""
+    id: "",
+    token: ""
 }

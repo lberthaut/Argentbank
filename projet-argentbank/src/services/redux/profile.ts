@@ -9,7 +9,8 @@ const initialState: userProfile = {
   lastName: "",
   createdAt: "",
   updatedAt: "",
-  id: ""
+  id: "",
+  token:""
 };
 
 export const ProfileSlice = createSlice({
@@ -18,12 +19,13 @@ export const ProfileSlice = createSlice({
   reducers: {
     updateUserProfile: (state, action: PayloadAction<userProfile>) => {
       const data = action.payload;
-      (state.email = data.email),
-        (state.firstName = data.firstName),
-        (state.lastName = data.lastName),
-        (state.createdAt = data.createdAt),
-        (state.updatedAt = data.updatedAt),
-        (state.id = data.id)
+      state.email = data.email;
+        state.firstName = data.firstName;
+      state.lastName = data.lastName;
+        state.createdAt = data.createdAt;
+        state.updatedAt = data.updatedAt;
+        state.id = data.id;
+        state.token = data.token
     },
   },
 });

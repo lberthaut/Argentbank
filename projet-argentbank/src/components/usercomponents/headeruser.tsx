@@ -1,9 +1,16 @@
 import React from "react";
 import {Link} from 'react-router-dom'
 import argentBankLogo from "../../assets/argentBankLogo.png";
+import { useAppSelector } from "../../services/redux/store";
+import { userLogoff } from "../../services/redux/login";
+import {useDispatch} from 'react-redux';
 
-export default class Headeruser extends React.Component {
-  render() {
+export default function Headeruser()  {
+  const dispatch = useDispatch();
+  const handleSignOut = (evt: React.SyntheticEvent) => {
+    dispatch(userLogoff())
+  }
+const userFirstName= useAppSelector(state=> state.profile.firstName)
     return (
         <nav className="main-nav">
         <a className="main-nav-logo" href="/">
@@ -17,14 +24,13 @@ export default class Headeruser extends React.Component {
         <div>
           <Link className="main-nav-item" to="/user">
             <i className="fa fa-user-circle"></i>
-            {""}
+            {userFirstName}
           </Link>
-          <Link className="main-nav-item" to="/">
+          <Link className="main-nav-item" to="/" onClick={handleSignOut}>
             <i className="fa fa-sign-out"></i>
             Sign Out
           </Link>
         </div>
       </nav>
     );
-  }
 }

@@ -12,7 +12,7 @@ export default function Signin() {
   // handleSubit post request on login back end
   const handleSubmit = (evt: React.SyntheticEvent) => {
     evt.preventDefault()
-    fetch('http://localhost:3001' + "/api/v1/user/login", {
+    fetch('http://localhost:3001/api/v1/user/login', {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ 
@@ -54,7 +54,7 @@ export default function Signin() {
               <input type="checkbox" id="remember-me" />
               <label htmlFor="remember-me">Remember me</label>
             </div>
-            <button className="sign-in-button">Sign In</button>
+            <input type="submit" className="sign-in-button" value="Sign In"/>
           </form>
         </section>
       </main>
