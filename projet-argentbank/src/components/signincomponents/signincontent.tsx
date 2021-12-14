@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { useAppDispatch } from "../../services/redux/store";
-import { userLogin } from '../../services/redux/login'
+import  login from "../../services/redux/actions";
 
 export default function Signin() {
 
@@ -24,7 +24,17 @@ export default function Signin() {
       const isJson = response.headers.get("content-type")?.includes("application/json")
       const data = isJson && await response.json()
       if (response.ok) {
-        dispatch(userLogin(data.body.token))
+        return{
+          email: response.email,
+          firstName: state.firstName,
+          lastName: state.lastName,
+          createdAt: state.createdAt,
+          updatedAt: state.updatedAt,
+          id: state.id
+        }
+        
+        /* dispatch(login(data.body.token))
+        window.location.replace("http://localhost:3000/user"); */
       } else {
         console.error(response)
         setError(data.message)

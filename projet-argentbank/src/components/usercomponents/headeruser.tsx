@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom'
 import argentBankLogo from "../../assets/argentBankLogo.png";
 import { useAppSelector } from "../../services/redux/store";
-import { userLogoff } from "../../services/redux/login";
+import { userLogoff } from "../../services/redux/reducers";
 import {useDispatch} from 'react-redux';
 
 export default function Headeruser()  {

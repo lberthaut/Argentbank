@@ -1,7 +1,7 @@
 import React, {useState}  from 'react';
 /* import Changenamestyle from '../../styles/userstyles/changenamestyle'; */
 import {useAppDispatch, useAppSelector} from '../../services/redux/store';
-import { updateUserProfile } from '../../services/redux/profile';
+import { updateUserProfile } from '../../services/redux/initialstate';
 
 
 export default function Titleuser(){
