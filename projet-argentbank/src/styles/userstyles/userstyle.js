@@ -1,6 +1,22 @@
 import {createGlobalStyle} from "styled-components";
 
-const Headeruserstyle = createGlobalStyle`
+const Userstyle = createGlobalStyle`
+
+@media (min-width: 920px) {
+    .edit-button {
+  border-color: #00bc77;
+  background-color: #00bc77;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.header {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -35,10 +51,6 @@ const Headeruserstyle = createGlobalStyle`
   max-width: 100%;
   width: 200px;
 }
-
-.hidden{
-  display:none;
-}
 `
 
-export default Headeruserstyle;
+export default Userstyle;
