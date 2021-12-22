@@ -5,9 +5,9 @@ info:
   description: Transaction API for argent Back OCR project 13
   termsOfService: None
   contact:
-    name: Raphael parodi
-    url: https://inexpensive-chipmunk-220.notion.site/Rapha-l-Parodi-6d28e8e66ba0490e8da5433b474645d8
-    email: raficraft@gmail.com
+    name: Louis BERTHAUT
+    url: 
+    email: louis@berthaut.com
 basePath: /
 paths:
   /api/v1/user/transaction:
