@@ -10,7 +10,6 @@ export const fetchedUser = (request) => {
     })
       .then((response) => {
         if (!response.ok) {
-          console.log("Error  - Fetch user");
           throw new Error("Error fetch user !");
         }
 
