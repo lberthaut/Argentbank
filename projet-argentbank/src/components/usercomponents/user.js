@@ -18,11 +18,12 @@ const User = ({token, fetchedUser }) => {
         method: "POST",
         endPoints: "profile",
         token: token,
+        fistName: firstName
       };
 
       fetchedUser(request);
     }
-  }, [token, fetchedUser]);
+  }, [token, fetchedUser, firstName]);
 
   
       const change = () => {

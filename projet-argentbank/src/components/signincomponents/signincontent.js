@@ -32,7 +32,7 @@ const Signin = ({ token, fetchedToken, remember }) => {
       console.log("on stock dans le local storage", JSON.stringify(token));
       localStorage.setItem("token", token);
     }
-     return <Userpage/>;
+     return <Userpage/>
   }
   return (
     <main className="main bg-dark">

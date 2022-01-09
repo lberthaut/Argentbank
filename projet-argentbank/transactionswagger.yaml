@@ -163,7 +163,7 @@ paths:
             $ref: '#/definitions/ApiResponse'
 definitions:
   Bearer:
-    type: apiKey
+    type: string
   ApiResponse:
     type: object
     properties:

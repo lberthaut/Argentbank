@@ -35,8 +35,10 @@ const EditUserName = ({user, token, fetchedEditName, isToggle, change})=> {
             <input className="inputchangename" type="text" id="Lastname" placeholder={lastName} ref={inputLastNameChange}/>
           </label>
         </div>
+        <div className="edit_buttons">
         <button className="savebutton" type="submit">Save</button>
         <button className="cancelbutton" onClick={()=> change(true, true)}>Cancel</button>
+        </div>
       </form>
     )
 }
