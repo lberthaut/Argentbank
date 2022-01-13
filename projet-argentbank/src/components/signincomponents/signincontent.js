@@ -29,7 +29,7 @@ const Signin = ({ token, fetchedToken, remember }) => {
     if (token) {
         if (remember) {
             console.log(
-                'on stock dans le local storage',
+                'Stockage dans le local storage',
                 JSON.stringify(token)
             );
             localStorage.setItem('token', token);

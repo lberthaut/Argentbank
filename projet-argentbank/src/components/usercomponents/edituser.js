@@ -20,7 +20,6 @@ const EditUserName = ({ user, token, fetchedEditName, isToggle, change }) => {
             token,
         };
         fetchedEditName(request);
-        console.log(request);
     };
 
     return (

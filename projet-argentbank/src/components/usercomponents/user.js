@@ -16,7 +16,9 @@ const User = ({ token, fetchedUser }) => {
                 method: 'POST',
                 endPoints: 'profile',
                 token: token,
-                fistName: firstName,
+                body: {
+                    firstName,
+                },
             };
 
             fetchedUser(request);
