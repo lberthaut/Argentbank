@@ -39,10 +39,7 @@ function App({ token, fetchedUser, user }) {
             <Routes>
                 <Route exact path="/" element={<Index />} />
                 <Route path="/login" element={<Signinpage />} />
-                <Route
-                    path="/user"
-                    render={(props) => <Userpage {...props} />}
-                />
+                <Route path="/user" render={(user) => <Userpage {...user} />} />
                 <Route path="/*" element={<Error404 />} />
             </Routes>
             <Footer />
@@ -52,7 +49,6 @@ function App({ token, fetchedUser, user }) {
 }
 
 const mapStateToProps = ({ token, user }) => {
-    console.log(user);
     return {
         token,
         user,

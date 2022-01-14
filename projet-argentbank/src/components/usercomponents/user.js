@@ -9,6 +9,7 @@ const User = ({ token, fetchedUser }) => {
     const [isToggleBtn, setIsToggleBtn] = useState(true);
     const [isToggle, setIsToggle] = useState(false);
     const firstName = useSelector((state) => state.firstName);
+    const lastName = useSelector((state) => state.lastName);
 
     useEffect(() => {
         if (token) {
@@ -18,12 +19,13 @@ const User = ({ token, fetchedUser }) => {
                 token: token,
                 body: {
                     firstName,
+                    lastName,
                 },
             };
 
             fetchedUser(request);
         }
-    }, [token, fetchedUser, firstName]);
+    }, [token, fetchedUser, firstName, lastName]);
 
     const change = () => {
         setIsToggleBtn(!isToggleBtn);
@@ -39,7 +41,10 @@ const User = ({ token, fetchedUser }) => {
             <div className="header">
                 <h1>Welcome back</h1>
                 <div style={{ display: isToggleBtn ? 'flex' : 'none' }}>
-                    <h2>{firstName}</h2>
+                    <h2>
+                        {firstName}
+                        {lastName}
+                    </h2>
                 </div>
                 <button
                     onClick={() => change()}
@@ -56,10 +61,11 @@ const User = ({ token, fetchedUser }) => {
     );
 };
 
-const mapStateToProps = ({ token, user }) => {
+const mapStateToProps = ({ token, firstName, lastName }) => {
     return {
         token,
-        user,
+        firstName,
+        lastName,
     };
 };
 
