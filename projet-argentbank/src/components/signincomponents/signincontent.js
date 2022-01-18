@@ -36,7 +36,7 @@ const Signin = ({ token, fetchedToken, remember }) => {
         }
 
         /*affiche la page user, mais toujours le problème des names et URI est toujours "/login", et pas "/user"*/
-        /*         return <Userpage />; */
+        return <Userpage />;
 
         /*affiche la page user, URI est "/user" mais les composants de la page userpage ne s'affiche pas 
         (Matched leaf route at location "/user" does not have an element. 

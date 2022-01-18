@@ -51,12 +51,12 @@ const EditUserName = ({ user, token, fetchedEditName, isToggle, change }) => {
                 </label>
             </div>
             <div className="edit_buttons">
-                <button className="savebutton" type="submit">
+                <button className="savebutton" type="submit" onClick={change}>
                     Save
                 </button>
                 <button
                     className="cancelbutton"
-                    onClick={() => change(true, true)}
+                    onClick={change}
                 >
                     Cancel
                 </button>

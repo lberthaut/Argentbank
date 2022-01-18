@@ -19,11 +19,12 @@ export const fetchedUser = (request) => {
                 console.log(user.body.firstName);
                 if (request.token) {
                     user.token = request.token;
-                    user.body.firstName = request.body.firstName;
-                    user.body.lastName = request.body.lastName;
+                    request.body.firstName = user.body.firstName;
+                    request.body.lastName = user.body.lastName;
+                    dispatch(login(user));
+                    console.log(user)
                 }
 
-                dispatch(login(user));
             })
             .catch((userError) => {
                 console.log(userError);

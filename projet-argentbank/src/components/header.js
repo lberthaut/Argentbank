@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { LOGOUT } from '../services/redux/actions';
 import argentBankLogo from '../assets/argentBankLogo.png';
+import { useSelector } from 'react-redux';
 
-const Header = ({ token, logout, firstName }) => {
+const Header = ({ token, logout }) => {
+    const user = useSelector((state) => state.user)
     return (
         <nav className="main-nav">
             <Link className="main-nav-logo" to="/">
@@ -19,7 +21,7 @@ const Header = ({ token, logout, firstName }) => {
                     <>
                         <Link className="main-nav-item" to="/user">
                             <i className="fa fa-user-circle"></i>
-                            {firstName}
+                            {user.firstName}
                         </Link>
                         <Link
                             className="main-nav-item"

@@ -8,6 +8,7 @@ export const fetchToken = (token) => {
         type: LOGIN,
         token,
         remember: token.body.remember,
+
     };
 };
 
