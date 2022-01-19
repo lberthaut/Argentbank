@@ -33,12 +33,13 @@ function App({ token, fetchedUser, user }) {
     }, [token, fetchedUser, user]);
 
     return (
-        <BrowserRouter>
+        <BrowserRouter >
             <Header />
             <Headerstyle />
             <Routes>
                 <Route exact path="/" element={<Index />} />
-                <Route path="/login" element={<Signinpage />} />
+                <Route path="/login/" element={<Signinpage />} />
+                {/* <Route path="/user" render={(props) => <Userpage {...props} />} /> */}
                 <Route path="/user" element={<Userpage />} />
                 <Route path="/*" element={<Error404 />} />
             </Routes>

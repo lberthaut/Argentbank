@@ -13,6 +13,7 @@ const userReducer = (state = initialState, action: any) => {
         ...state,
         token: action.token,
         remember: action.remember,
+        user: "",
       };
     }
     case LOGIN: {

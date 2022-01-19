@@ -3,11 +3,12 @@ import { useEffect, useState } from 'react';
 import { fetchedUser } from '../../services/redux/fetch/fetcheduser';
 import EditUserName from './edituser';
 import Changenamestyle from '../../styles/userstyles/changenamestyle';
-import Index from '../../pages/indexpage';
+import { useNavigate } from 'react-router-dom';
 
 const User = ({ token, fetchedUser }) => {
     const [isToggleBtn, setIsToggleBtn] = useState(true);
     const [isToggle, setIsToggle] = useState(false);
+    const navigate = useNavigate();
     const user = useSelector((state) => state.user);
     const firstName = useSelector((state) => state.firstName);
     const lastName = useSelector((state) => state.lastName)
@@ -33,10 +34,9 @@ const User = ({ token, fetchedUser }) => {
         setIsToggle(!isToggle);
     };
 
-    console.log(user)
 
     if (!token) {
-        return <Index />;
+        navigate('/')
     }
 
     return (
