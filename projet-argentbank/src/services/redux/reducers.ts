@@ -11,9 +11,8 @@ const userReducer = (state = initialState, action: any) => {
     case FETCH_TOKEN: {
       return {
         ...state,
-        token: action.token.body.token,
-        remember: action.token.body.remember,
-        user: action.user,
+        token: action.token,
+        remember: action.remember,
       };
     }
     case LOGIN: {

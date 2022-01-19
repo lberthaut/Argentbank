@@ -12,6 +12,7 @@ const User = ({ token, fetchedUser }) => {
     const firstName = useSelector((state) => state.firstName);
     const lastName = useSelector((state) => state.lastName)
 
+
     useEffect(() => {
         if (token) {
             const request = {
@@ -26,7 +27,7 @@ const User = ({ token, fetchedUser }) => {
 
             fetchedUser(request);
         }
-    }, [token, fetchedUser, firstName, lastName]);
+    }, [fetchedUser, token, firstName, lastName]);
     const change = () => {
         setIsToggleBtn(!isToggleBtn);
         setIsToggle(!isToggle);
@@ -63,8 +64,9 @@ const User = ({ token, fetchedUser }) => {
     );
 };
 
-const mapStateToProps = ({ token, firstName, lastName }) => {
+const mapStateToProps = ({ token, firstName, lastName, user }) => {
     return {
+        user,
         token,
         firstName,
         lastName,

@@ -1,12 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { fetchedToken } from '../../services/redux/fetch/fetchedtoken';
-import Userpage from '../../pages/userpage';
+import { useNavigate } from 'react-router-dom';
 
 const Signin = ({ token, fetchedToken, remember }) => {
     const inputName = useRef(null);
     const inputPassword = useRef(null);
     const inputRemember = useRef(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         document.title = 'login';
@@ -25,6 +26,7 @@ const Signin = ({ token, fetchedToken, remember }) => {
         };
 
         fetchedToken(request);
+
     };
     if (token) {
         if (remember) {
@@ -34,8 +36,7 @@ const Signin = ({ token, fetchedToken, remember }) => {
             );
             localStorage.setItem('token', token);
         }
-
-        return <Userpage />;
+        navigate('/user')
 
     }
     return (
