@@ -6,34 +6,16 @@ import { Redirect } from 'react-router';
 import { useHistory } from 'react-router';
 import Userpage from '../../pages/userpage';
 import { withRouter } from 'react-router';
-import { fetchedUser } from '../../services/redux/fetch/fetcheduser';
-import { useSelector } from 'react-redux';
 
 const Signin = ({ token, fetchedToken, remember }) => {
     const inputName = useRef(null);
     const inputPassword = useRef(null);
     const inputRemember = useRef(null);
-    const firstName = useSelector((state) => state.firstName);
-    const lastName = useSelector((state) => state.lastName)
     const navigate = useNavigate();
     const history = useHistory();
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-
-        const request2 = {
-            method: 'POST',
-            endPoints: 'profile',
-            token: token,
-            body: {
-                firstName,
-                lastName
-            }
-        };
-
-        fetchedUser(request2);
-
-
         const request = {
             method: 'POST',
             endPoints: 'login',
