@@ -21,7 +21,7 @@ const Header = ({ token, logout }) => {
                     <>
                         <Link className="main-nav-item" to="/user">
                             <i className="fa fa-user-circle"></i>
-                            {user.firstName}
+                            {/* {user.body.firstName} */}
                         </Link>
                         <Link
                             className="main-nav-item"

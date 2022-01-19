@@ -8,9 +8,9 @@ import Index from '../../pages/indexpage';
 const User = ({ token, fetchedUser }) => {
     const [isToggleBtn, setIsToggleBtn] = useState(true);
     const [isToggle, setIsToggle] = useState(false);
-    const user = useSelector((state) => state.user)
-
-    console.log(user)
+    const user = useSelector((state) => state.user);
+    const firstName = useSelector((state) => state.firstName);
+    const lastName = useSelector((state) => state.lastName)
 
     useEffect(() => {
         if (token) {
@@ -18,15 +18,21 @@ const User = ({ token, fetchedUser }) => {
                 method: 'POST',
                 endPoints: 'profile',
                 token: token,
+                body: {
+                    firstName,
+                    lastName
+                }
             };
 
             fetchedUser(request);
         }
-    }, [token, fetchedUser]);
+    }, [token, fetchedUser, firstName, lastName]);
     const change = () => {
         setIsToggleBtn(!isToggleBtn);
         setIsToggle(!isToggle);
     };
+
+    console.log(user)
 
     if (!token) {
         return <Index />;
@@ -38,8 +44,8 @@ const User = ({ token, fetchedUser }) => {
                 <h1>Welcome back</h1>
                 <div style={{ display: isToggleBtn ? 'flex' : 'none' }}>
                     <h2>
-                        {user.firstName}&nbsp;
-                        {user.lastName}
+                        {/* {user.body.firstName}&nbsp;
+                        {user.body.lastName} */}
                     </h2>
                 </div>
                 <button

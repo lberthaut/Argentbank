@@ -35,13 +35,8 @@ const Signin = ({ token, fetchedToken, remember }) => {
             localStorage.setItem('token', token);
         }
 
-        /*affiche la page user, mais toujours le problème des names et URI est toujours "/login", et pas "/user"*/
         return <Userpage />;
 
-        /*affiche la page user, URI est "/user" mais les composants de la page userpage ne s'affiche pas 
-        (Matched leaf route at location "/user" does not have an element. 
-        This means it will render an <Outlet /> with a null value by default resulting in an "empty" page.) */
-        /*         window.location.href = 'http://localhost:3000/user'; */
     }
     return (
         <main className="main bg-dark">

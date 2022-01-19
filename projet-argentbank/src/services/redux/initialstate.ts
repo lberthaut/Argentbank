@@ -1,10 +1,12 @@
 export const initialStateAuthentification = {
-    token: '',
-    remember: '',
+  user: "",
+  token: "",
+  remember: "",
 };
 
 export const initialStateUser = {
-    email: '',
-    firstName: '',
-    lastName: '',
+  user: "",
+  email: "",
+  firstName: "",
+  lastName: "",
 };

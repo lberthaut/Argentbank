@@ -21,8 +21,8 @@ export const fetchedUser = (request) => {
                     user.token = request.token;
                     request.body.firstName = user.body.firstName;
                     request.body.lastName = user.body.lastName;
-                    dispatch(login(user));
                     console.log(user)
+                    dispatch(login(user));
                 }
 
             })
