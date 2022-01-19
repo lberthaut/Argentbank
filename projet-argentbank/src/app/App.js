@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import { fetchedUser } from '../services/redux/fetch/fetcheduser';
 import Index from '../pages/indexpage';
@@ -33,7 +33,7 @@ function App({ token, fetchedUser, user }) {
     }, [token, fetchedUser, user]);
 
     return (
-        <BrowserRouter >
+        <>
             <Header />
             <Headerstyle />
             <Routes>
@@ -45,7 +45,8 @@ function App({ token, fetchedUser, user }) {
             </Routes>
             <Footer />
             <Footerstyle />
-        </BrowserRouter>
+        </>
+
     );
 }
 

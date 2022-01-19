@@ -24,5 +24,7 @@ export const fetchedToken = (request) => {
       .catch((error) => {
         console.log(error);
       });
+
   };
+
 };

@@ -1,6 +1,6 @@
 import { login } from '../actions';
 
-export const fetchedUser = (request) => {
+export function fetchedUser(request) {
     return async (dispatch) => {
         return fetch(`http://localhost:3001/api/v1/user/${request.endPoints}`, {
             method: request.method,

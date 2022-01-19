@@ -34,11 +34,11 @@ const User = ({ token, fetchedUser }) => {
         setIsToggle(!isToggle);
     };
 
+    console.log(user)
 
     if (!token) {
         navigate('/')
     }
-
     return (
         <>
             <div className="header">
