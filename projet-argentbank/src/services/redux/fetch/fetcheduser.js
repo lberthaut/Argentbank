@@ -12,7 +12,6 @@ export function fetchedUser(request) {
                 if (!response.ok) {
                     throw new Error('Error fetch user !');
                 }
-
                 return response.json();
             })
             .then((user) => {

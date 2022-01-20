@@ -1,18 +1,18 @@
 import { useRef } from 'react';
 import { connect } from 'react-redux';
 import { fetchedToken } from '../../services/redux/fetch/fetchedtoken';
-import { useNavigate, Route } from 'react-router-dom';
+import Userpage from '../../pages/userpage';
+/* import { useNavigate, Route } from 'react-router-dom';
 import { Redirect } from 'react-router';
 import { useHistory } from 'react-router';
-import Userpage from '../../pages/userpage';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router'; */
 
 const Signin = ({ token, fetchedToken, remember }) => {
     const inputName = useRef(null);
     const inputPassword = useRef(null);
     const inputRemember = useRef(null);
-    const navigate = useNavigate();
-    const history = useHistory();
+    /*     const navigate = useNavigate();
+        const history = useHistory(); */
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
