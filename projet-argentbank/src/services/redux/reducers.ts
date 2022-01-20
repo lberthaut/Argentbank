@@ -13,14 +13,14 @@ const userReducer = (state = initialState, action: any) => {
         ...state,
         token: action.token,
         remember: action.remember,
-        user: "",
       };
     }
     case LOGIN: {
       return {
         ...state,
-        token: action.token,
-        user: action.user,
+        firstName: action.firstName,
+        lastName: action.lastName,
+        email: action.email,
       };
     }
     case LOGOUT: {
@@ -30,7 +30,8 @@ const userReducer = (state = initialState, action: any) => {
     case EDIT_NAME: {
       return {
         ...state,
-        user: action.user,
+        firstName: action.firstName,
+        lastName: action.lastName,
       };
     }
     default:

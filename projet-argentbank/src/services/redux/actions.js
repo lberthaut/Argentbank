@@ -6,15 +6,17 @@ export const EDIT_NAME = 'EDIT_NAME';
 export const login = (user) => {
     return {
         type: LOGIN,
-        user: user,
-        token: user.token,
+        firstName: user.body.firstName,
+        lastName: user.body.lastName,
+        email: user.body.email,
+
     };
 };
 
-export const fetchToken = (token, user) => {
+export const fetchToken = (token) => {
     return {
         type: FETCH_TOKEN,
-        token,
+        token: token.body.token,
         remember: token.body.remember,
     };
 };
@@ -30,6 +32,7 @@ export const logout = () => {
 export const editName = (user) => {
     return {
         type: EDIT_NAME,
-        user: user.body,
+        firstName: user.body.firstName,
+        lastName: user.body.lastName,
     };
 };

@@ -38,7 +38,7 @@ function App({ token, fetchedUser, user }) {
             <Headerstyle />
             <Routes>
                 <Route exact path="/" element={<Index />} />
-                <Route path="/login/" element={<Signinpage />} />
+                <Route path="/login" element={<Signinpage />} />
                 {/* <Route path="/user" render={(props) => <Userpage {...props} />} /> */}
                 <Route path="/user" element={<Userpage />} />
                 <Route path="/*" element={<Error404 />} />

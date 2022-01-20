@@ -1,18 +1,15 @@
 import { useRef } from 'react';
 import { connect } from 'react-redux';
 import { fetchedToken } from '../../services/redux/fetch/fetchedtoken';
-import Userpage from '../../pages/userpage';
-/* import { useNavigate, Route } from 'react-router-dom';
-import { Redirect } from 'react-router';
-import { useHistory } from 'react-router';
-import { withRouter } from 'react-router'; */
+import { useNavigate } from 'react-router-dom';
+
 
 const Signin = ({ token, fetchedToken, remember }) => {
     const inputName = useRef(null);
     const inputPassword = useRef(null);
     const inputRemember = useRef(null);
-    /*     const navigate = useNavigate();
-        const history = useHistory(); */
+    const navigate = useNavigate()
+
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
@@ -36,10 +33,7 @@ const Signin = ({ token, fetchedToken, remember }) => {
             );
             localStorage.setItem('token', token);
         }
-        return (<Userpage />)
-        /* navigate('/user') */
-        /*  <Route><Redirect to="/user" /></Route> */
-        /* history.push("/user"); */
+        navigate('/user')
     }
     return (
         <main className="main bg-dark">

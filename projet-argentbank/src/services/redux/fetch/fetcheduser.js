@@ -5,7 +5,7 @@ export function fetchedUser(request) {
         return fetch(`http://localhost:3001/api/v1/user/${request.endPoints}`, {
             method: request.method,
             headers: {
-                Authorization: `Bearer ${request.token.body.token}`,
+                Authorization: `Bearer ${request.token}`,
             },
         })
             .then((response) => {
@@ -16,13 +16,10 @@ export function fetchedUser(request) {
             })
             .then((user) => {
                 console.log(user.body.firstName);
-                if (request.token) {
-                    user.token = request.token;
-                    request.body.firstName = user.body.firstName;
-                    request.body.lastName = user.body.lastName;
-                    console.log(user)
-                    dispatch(login(user));
-                }
+                request.body.firstName = user.body.firstName;
+                request.body.lastName = user.body.lastName;
+                console.log(user)
+                dispatch(login(user));
 
             })
             .catch((userError) => {
