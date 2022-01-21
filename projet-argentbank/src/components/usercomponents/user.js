@@ -30,12 +30,6 @@ const User = ({ token, fetchedUser }) => {
         setIsToggleBtn(!isToggleBtn);
         setIsToggle(!isToggle);
     };
-
-    console.log(firstName)
-
-    /*     if (!token) {
-            navigate('/')
-        } */
     return (
         <>
             <div className="header">

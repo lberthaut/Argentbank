@@ -15,10 +15,8 @@ export function fetchedUser(request) {
                 return response.json();
             })
             .then((user) => {
-                console.log(user.body.firstName);
                 request.body.firstName = user.body.firstName;
                 request.body.lastName = user.body.lastName;
-                console.log(user)
                 dispatch(login(user));
 
             })
