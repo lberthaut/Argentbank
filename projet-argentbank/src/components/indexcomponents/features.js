@@ -3,6 +3,8 @@ import imgchat from "../../assets/icon-chat.png";
 import imgmoney from "../../assets/icon-money.png";
 import imgsecurity from "../../assets/icon-security.png";
 
+
+/*Main content of the index page*/
 export default class Features extends React.Component {
   render() {
     return (

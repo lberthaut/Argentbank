@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+/* EditUsername component's CSS*/
 const Changenamestyle = createGlobalStyle`
-
 .changenameform{
     display: flex;
     flex-direction: column;

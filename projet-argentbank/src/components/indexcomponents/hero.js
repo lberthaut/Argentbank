@@ -1,10 +1,10 @@
 import React from 'react';
 import Banktree from '../../assets/bank-tree.jpeg';
 
-
-export default class Hero extends React.Component{
-    render(){
-        return(
+/*First content of the index page*/
+export default class Hero extends React.Component {
+    render() {
+        return (
             <div className="hero">
                 <section className="hero-content">
                     <h2 className="sr-only">Promoted Content</h2>
@@ -13,7 +13,7 @@ export default class Hero extends React.Component{
                     <p className="subtitle">High interest rates.</p>
                     <p className="text">Open a savings account with Argent Bank today!</p>
                 </section>
-                <img src={Banktree} alt="background index" className="background-index"/>
+                <img src={Banktree} alt="background index" className="background-index" />
             </div>
         )
     }

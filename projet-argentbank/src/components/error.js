@@ -1,14 +1,16 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Errorstyle from '../styles/page404style.js';
 
-export default class Error404 extends React.Component{
-    render(){
-        return(
+
+/*404 error component*/
+export default class Error404 extends React.Component {
+    render() {
+        return (
             <main className="error">
                 <div className="error-content">
                     <p className="error-number">
-                    404
+                        404
                     </p>
                     <p className="error-message">
                         La page que vous demandez n'existe pas.
@@ -17,7 +19,7 @@ export default class Error404 extends React.Component{
                 <Link className="nav-link error-back" to="/">
                     Retourner à la page d'accueil
                 </Link>
-                <Errorstyle/>
+                <Errorstyle />
             </main>
         );
     }
