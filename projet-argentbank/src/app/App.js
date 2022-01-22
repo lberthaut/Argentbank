@@ -8,10 +8,7 @@ import Error404 from '../components/error';
 import Header from '../components/header';
 import Headerstyle from '../styles/headerstyle';
 
-/*
- * Create routes for differents pages of the site
- */
-
+/*Create routes for differents pages of the site*/
 function App() {
     return (
         <>
@@ -29,6 +26,5 @@ function App() {
 
     );
 }
-
 
 export default App;
