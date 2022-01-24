@@ -3,22 +3,19 @@ import Accounts from "../components/usercomponents/accounts";
 import User from "../components/usercomponents/user";
 import Accountsstyle from "../styles/userstyles/accountsstyle";
 import Userstyle from "../styles/userstyles/userstyle";
-import useToken from "../components/usetoken";
-
+import { useSelector } from "react-redux";
 
 /*user page which contains usercontent and accounts component*/
 export default function Userpage() {
-
-  const { hasToken } = useToken();
-
+  const token = useSelector((state) => state.token);
+  /*Redirect the user if he didn't login, so don't fetch the token*/
   useEffect(() => {
-    if (!hasToken) document.location.replace('/')
-  }, [hasToken])
+    if (token === "") document.location.replace('/')
+  })
 
   return (
     <main className="main bg-dark">
-      <User /><Userstyle />
-      <Accounts /><Accountsstyle />
+      {(token === "") ? (null) : <><User /><Userstyle /><Accounts /><Accountsstyle /></>}
     </main>
   );
 }
