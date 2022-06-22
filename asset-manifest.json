@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/Argentbank/static/js/main.dccef6f6.chunk.js",
+    "main.js.map": "/Argentbank/static/js/main.dccef6f6.chunk.js.map",
+    "runtime-main.js": "/Argentbank/static/js/runtime-main.04a97392.js",
+    "runtime-main.js.map": "/Argentbank/static/js/runtime-main.04a97392.js.map",
+    "static/js/2.443215fd.chunk.js": "/Argentbank/static/js/2.443215fd.chunk.js",
+    "static/js/2.443215fd.chunk.js.map": "/Argentbank/static/js/2.443215fd.chunk.js.map",
+    "static/js/3.bdf4c8c9.chunk.js": "/Argentbank/static/js/3.bdf4c8c9.chunk.js",
+    "static/js/3.bdf4c8c9.chunk.js.map": "/Argentbank/static/js/3.bdf4c8c9.chunk.js.map",
+    "index.html": "/Argentbank/index.html",
+    "static/js/2.443215fd.chunk.js.LICENSE.txt": "/Argentbank/static/js/2.443215fd.chunk.js.LICENSE.txt",
+    "static/media/argentBankLogo.e031a16c.png": "/Argentbank/static/media/argentBankLogo.e031a16c.png",
+    "static/media/bank-tree.4d59987c.jpeg": "/Argentbank/static/media/bank-tree.4d59987c.jpeg",
+    "static/media/icon-chat.e238539d.png": "/Argentbank/static/media/icon-chat.e238539d.png",
+    "static/media/icon-money.8ec88bb1.png": "/Argentbank/static/media/icon-money.8ec88bb1.png",
+    "static/media/icon-security.1c819fa1.png": "/Argentbank/static/media/icon-security.1c819fa1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04a97392.js",
+    "static/js/2.443215fd.chunk.js",
+    "static/js/main.dccef6f6.chunk.js"
+  ]
+}
