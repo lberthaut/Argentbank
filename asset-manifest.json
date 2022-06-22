@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/argentbank/static/js/main.dccef6f6.chunk.js",
-    "main.js.map": "/argentbank/static/js/main.dccef6f6.chunk.js.map",
+    "main.js": "/argentbank/static/js/main.d6c27e2d.chunk.js",
+    "main.js.map": "/argentbank/static/js/main.d6c27e2d.chunk.js.map",
     "runtime-main.js": "/argentbank/static/js/runtime-main.efaa8663.js",
     "runtime-main.js.map": "/argentbank/static/js/runtime-main.efaa8663.js.map",
     "static/js/2.8d942c30.chunk.js": "/argentbank/static/js/2.8d942c30.chunk.js",
@@ -19,6 +19,6 @@
   "entrypoints": [
     "static/js/runtime-main.efaa8663.js",
     "static/js/2.8d942c30.chunk.js",
-    "static/js/main.dccef6f6.chunk.js"
+    "static/js/main.d6c27e2d.chunk.js"
   ]
 }
