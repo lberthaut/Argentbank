@@ -21,7 +21,7 @@ const Header = ({ token, logout }) => {
             <div>
                 {token ? (
                     <>
-                        <Link className="main-nav-item" to="/user">
+                        <Link className="main-nav-item" to="/argentbank/user">
                             <i className="fa fa-user-circle"></i>
                             {firstName}
                         </Link>
@@ -35,7 +35,7 @@ const Header = ({ token, logout }) => {
                         </Link>
                     </>
                 ) : (
-                    <Link to="./login" className="main-nav-item">
+                    <Link to="argentbank/login" className="main-nav-item">
                         <i className="fa fa-user-circle"></i>
                         Log In
                     </Link>

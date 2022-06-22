@@ -1,8 +1,8 @@
-import { login } from '../actions';
+/* import { login } from '../actions'; */
 
 
 /* Fetch component, for get names, called in User component*/
-export function fetchedUser(request) {
+/* export function fetchedUser(request) {
     return async (dispatch) => {
         return fetch(`http://localhost:3001/api/v1/user/${request.endPoints}`, {
             method: request.method,
@@ -27,3 +27,4 @@ export function fetchedUser(request) {
             });
     };
 };
+ */

@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { connect } from 'react-redux';
-import { fetchedToken } from '../../services/redux/fetch/fetchedtoken';
+/* import { fetchedToken } from '../../services/redux/fetch/fetchedtoken'; */
 import { useNavigate } from 'react-router-dom';
 
 /*Signin component*/
@@ -12,7 +12,7 @@ const Signin = ({ token, fetchedToken, remember }) => {
 
     /*On signin submit, the token will be got by the fetch*/
     const handleSubmit = (evt) => {
-        evt.preventDefault();
+        /* evt.preventDefault();
         const request = {
             method: 'POST',
             endPoints: 'login',
@@ -23,7 +23,8 @@ const Signin = ({ token, fetchedToken, remember }) => {
             remember: inputRemember.current.checked,
         };
 
-        fetchedToken(request);
+        fetchedToken(request); */
+        console.log("Le Submit ne mene plus à rien, le serveur n'étant plus accessible, je ne peux soumettre de requetes pour le token")
     };
     if (token) {
         /*If remember checked, store the token in local storage*/
@@ -34,7 +35,7 @@ const Signin = ({ token, fetchedToken, remember }) => {
             );
             localStorage.setItem('token', token);
         }
-        navigate('/user')
+        navigate('/argentbank/user')
     }
     return (
         <main className="main bg-dark">
@@ -92,7 +93,7 @@ const mapStateToProps = ({ token, remember }) => {
 /*Inject actions to the store*/
 const mapDispatchToProps = (dispatch) => {
     return {
-        fetchedToken: (...args) => dispatch(fetchedToken(...args)),
+        /*         fetchedToken: (...args) => dispatch(fetchedToken(...args)), */
     };
 };
 /*Connect provides its connected component with the pieces of the data it needs from the store */

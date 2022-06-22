@@ -1,8 +1,8 @@
-import { editName } from "../actions";
+/* import { editName } from "../actions"; */
 
 
 /*Fetch component, for edit names, called in Editusername component*/
-export const fetchedEditName = (request) => {
+/* export const fetchedEditName = (request) => {
   return async (dispatch) => {
     return fetch(`http://localhost:3001/api/v1/user/${request.endPoints}`, {
       method: request.method,
@@ -27,3 +27,4 @@ export const fetchedEditName = (request) => {
       });
   };
 };
+ */
