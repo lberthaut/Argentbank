@@ -10,7 +10,7 @@ const Header = ({ token, logout }) => {
     const firstName = useSelector((state) => state.firstName);
     return (
         <nav className="main-nav">
-            <Link className="main-nav-logo" to="/">
+            <Link className="main-nav-logo" to="/argentbank">
                 <img
                     className="main-nav-logo-image"
                     src={argentBankLogo}
