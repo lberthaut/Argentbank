@@ -15,7 +15,7 @@ function App() {
             <Header />
             <Headerstyle />
             <Routes>
-                <Route exact path="/" element={<Index />} />
+                <Route exact path="/argentbank" element={<Index />} />
                 <Route path="/login" element={<Signinpage />} />
                 <Route path="/user" element={<Userpage />} />
                 <Route path="/*" element={<Error404 />} />
