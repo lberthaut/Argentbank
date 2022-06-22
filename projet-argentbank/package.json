@@ -1,7 +1,7 @@
 {
   "name": "projet-argentbank",
   "version": "0.1.0",
-  "homepage": "https://lberthaut.github.io/Argentbank/",
+  "homepage": "https://lberthaut.github.io/argentbank/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.1",
