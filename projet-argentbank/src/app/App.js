@@ -16,9 +16,9 @@ function App() {
             <Headerstyle />
             <Routes>
                 <Route exact path="/argentbank" element={<Index />} />
-                <Route path="/login" element={<Signinpage />} />
-                <Route path="/user" element={<Userpage />} />
-                <Route path="/*" element={<Error404 />} />
+                <Route path="/argentbank/login" element={<Signinpage />} />
+                <Route path="/argentbank/user" element={<Userpage />} />
+                <Route path="/argentbank/*" element={<Error404 />} />
             </Routes>
             <Footer />
             <Footerstyle />
