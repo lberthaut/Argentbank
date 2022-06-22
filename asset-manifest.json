@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/argentbank/static/js/main.be78859d.chunk.js",
-    "main.js.map": "/argentbank/static/js/main.be78859d.chunk.js.map",
-    "runtime-main.js": "/argentbank/static/js/runtime-main.efaa8663.js",
-    "runtime-main.js.map": "/argentbank/static/js/runtime-main.efaa8663.js.map",
-    "static/js/2.8d942c30.chunk.js": "/argentbank/static/js/2.8d942c30.chunk.js",
-    "static/js/2.8d942c30.chunk.js.map": "/argentbank/static/js/2.8d942c30.chunk.js.map",
-    "static/js/3.bdf4c8c9.chunk.js": "/argentbank/static/js/3.bdf4c8c9.chunk.js",
-    "static/js/3.bdf4c8c9.chunk.js.map": "/argentbank/static/js/3.bdf4c8c9.chunk.js.map",
+    "main.js": "/argentbank/static/js/main.88bef3ff.chunk.js",
+    "main.js.map": "/argentbank/static/js/main.88bef3ff.chunk.js.map",
+    "runtime-main.js": "/argentbank/static/js/runtime-main.2d5a2f7c.js",
+    "runtime-main.js.map": "/argentbank/static/js/runtime-main.2d5a2f7c.js.map",
+    "static/js/2.621af3ca.chunk.js": "/argentbank/static/js/2.621af3ca.chunk.js",
+    "static/js/2.621af3ca.chunk.js.map": "/argentbank/static/js/2.621af3ca.chunk.js.map",
+    "static/js/3.1f2cf1e7.chunk.js": "/argentbank/static/js/3.1f2cf1e7.chunk.js",
+    "static/js/3.1f2cf1e7.chunk.js.map": "/argentbank/static/js/3.1f2cf1e7.chunk.js.map",
     "index.html": "/argentbank/index.html",
-    "static/js/2.8d942c30.chunk.js.LICENSE.txt": "/argentbank/static/js/2.8d942c30.chunk.js.LICENSE.txt",
+    "static/js/2.621af3ca.chunk.js.LICENSE.txt": "/argentbank/static/js/2.621af3ca.chunk.js.LICENSE.txt",
     "static/media/argentBankLogo.e031a16c.png": "/argentbank/static/media/argentBankLogo.e031a16c.png",
     "static/media/bank-tree.4d59987c.jpeg": "/argentbank/static/media/bank-tree.4d59987c.jpeg",
     "static/media/icon-chat.e238539d.png": "/argentbank/static/media/icon-chat.e238539d.png",
@@ -17,8 +17,8 @@
     "static/media/icon-security.1c819fa1.png": "/argentbank/static/media/icon-security.1c819fa1.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.efaa8663.js",
-    "static/js/2.8d942c30.chunk.js",
-    "static/js/main.be78859d.chunk.js"
+    "static/js/runtime-main.2d5a2f7c.js",
+    "static/js/2.621af3ca.chunk.js",
+    "static/js/main.88bef3ff.chunk.js"
   ]
 }
